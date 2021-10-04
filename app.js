@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/frontend/css'));
 
 //mongodb server connections this is a old project now
-mongoose.connect("mongodb://localhost:27017/userData");
+mongoose.connect("mongodb://user:password@example-mongodb-svc.mongodb.svc.cluster.local:27017/admin");
 var db = mongoose.connection;
 
 //mongo error

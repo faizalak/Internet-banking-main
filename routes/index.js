@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var User = require('../model/users');
+var User = require('../models/user');
 //get the pages
 router.get('/',function(req, res, next){
   return res.render('final',{title:'HOME'});
